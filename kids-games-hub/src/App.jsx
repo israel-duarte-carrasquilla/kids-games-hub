@@ -156,14 +156,14 @@ export default function App() {
               </button>
             )}
 
-            {/* Botón Panel Parental */}
+            {/* Botón Panel Superadmin / Padres */}
             <button
               onClick={() => setIsAdminOpen(true)}
-              className="btn-admin-header flex items-center gap-1.5"
-              title="Panel de Control Parental"
+              className="btn-admin-header flex items-center gap-1.5 shadow-md"
+              title="Panel de Control Superadministrador"
             >
-              <ShieldCheck size={18} />
-              <span className="hidden md:inline font-bold">Padres</span>
+              <ShieldCheck size={20} className="text-amber-400" />
+              <span className="font-extrabold tracking-wide">⚙️ SuperAdmin</span>
             </button>
           </div>
         </div>
